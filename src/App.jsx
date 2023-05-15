@@ -1,10 +1,15 @@
+//Custom components
+import Navbar from '../src/components/Navbar'
+//Styles
 import './App.css'
+
 
 function App() {
 
   return (
     <div className="App">
-      <p>LOL</p>
+      <Navbar></Navbar>
+      
     </div>
   )
 }
