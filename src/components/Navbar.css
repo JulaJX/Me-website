@@ -1,16 +1,74 @@
-nav{
+ nav{
     font-family: 'Unbounded', cursive;
 }
-.nav-slide{
+ .nav-slide{
     text-align: center;
     transition: 400ms ease-in-out;
     font-family: 'Unbounded', cursive;
-    
 }
-.logo-box{    
+.Navbar .logo-box{    
     font-weight: 700;
 }
-.logo{
+.Navbar .logo{
     transform: rotateY(180deg);
     transform: rotateZ(180deg);
 }
+.Navbar .links{
+	position: relative;
+	width: 590px;
+}
+.Navbar .links a{
+	font-size: 15px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+}
+.Navbar .links a:hover{
+color:#FAF33E;
+}
+
+.Navbar .links .animation{
+    left:45px;
+	position: absolute;
+	border-bottom:2px solid #FAF33E;
+	bottom: 4px;
+	z-index: 0;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+
+.Navbar .links a:nth-child(1){
+	width: 250px;
+}
+.Navbar .links a:nth-child(1):hover~.animation{
+	width: 110px;
+	left: 45px;
+}
+.Navbar .links .start-home, a:nth-child(1)~.animation{
+	width: 110px;
+	left: 45px;
+}
+
+.Navbar .links a:nth-child(2){
+	width: 250px;
+}
+.Navbar .links a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 240px;
+}
+
+
+.Navbar .links a:nth-child(3){
+	width: 250px;
+}
+.Navbar .links a:nth-child(3):hover~.animation{
+	width: 110px;
+	left: 435px;
+}
+
+
+
+
+
+
+
+
