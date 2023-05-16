@@ -1,4 +1,16 @@
+nav{
+    font-family: 'Unbounded', cursive;
+}
 .nav-slide{
-    text-align: left;
+    text-align: center;
     transition: 400ms ease-in-out;
+    font-family: 'Unbounded', cursive;
+    
+}
+.logo-box{    
+    font-weight: 700;
+}
+.logo{
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
 }
