@@ -1,11 +1,28 @@
- nav{
+.Navbar{
     font-family: 'Unbounded', cursive;
 }
+
+/* SLIDE NAV STYLES */
  .nav-slide{
     text-align: center;
     transition: 400ms ease-in-out;
     font-family: 'Unbounded', cursive;
 }
+/* STICKY NAV STYLES */
+.wrap div {
+    position: fixed;
+    top:-100px;
+
+    width: 100%;
+    color:white;
+    transition: 300ms ease-in-out;
+    
+}
+.sticky{
+transform: translateY(100px);   
+}
+
+/* MAIN NAV STYLES */
 .Navbar .logo-box{    
     font-weight: 700;
 }
@@ -25,7 +42,6 @@
 .Navbar .links a:hover{
 color:#FAF33E;
 }
-
 .Navbar .links .animation{
     left:45px;
 	position: absolute;
@@ -56,7 +72,6 @@ color:#FAF33E;
 	left: 240px;
 }
 
-
 .Navbar .links a:nth-child(3){
 	width: 250px;
 }
@@ -64,8 +79,29 @@ color:#FAF33E;
 	width: 110px;
 	left: 435px;
 }
+/* Text writer */
 
-
+.text{
+	color:white;
+	font-family: 'Unbounded', cursive;
+	font-size:80px;
+}
+@media(max-width:1200px){
+	.text{
+		font-size:40px;
+	}
+	.banner .img{
+		display:none;
+	}
+}
+@media(max-width:900px){
+	.text{
+		font-size:30px;
+	}
+	.banner .img{
+		display:none;
+	}
+}
 
 
 
