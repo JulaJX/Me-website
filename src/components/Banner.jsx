@@ -62,7 +62,7 @@ const Banner = () => {
 
 
     return ( 
-        <div className="Banner bg-bg">
+        <div className="py-[30px] md:py-[0] bg-bg2">
             <div className="banner flex flex-col md:flex-row text-center  justify-center md:justify-around items-center">
                 <h1 className=' text w-[900px]'>
                     <a href="" className="typewrite" data-period="2000" data-type='[ "Hi there !", "My name is Julek", "Im Front-end Dev."]'>
