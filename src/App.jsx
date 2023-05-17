@@ -2,6 +2,7 @@
 import {Routes, Route} from 'react-router-dom'
 //CUSTOM COMPONENTS
 import Navbar from '../src/components/Navbar'
+import Banner from '../src/components/Banner'
 import Home from '../src/pages/home/Home'
 import Portfolio from '../src/pages/portfolio/Portfolio'
 import Contactcv from './pages/contactcv/contactcv'

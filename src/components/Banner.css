@@ -1,0 +1,21 @@
+.text{
+	color:white;
+	font-family: 'Unbounded', cursive;
+	font-size:80px;
+}
+@media(max-width:1200px){
+	.text{
+		font-size:40px;
+	}
+	.banner .img{
+		display:none;
+	}
+}
+@media(max-width:900px){
+	.text{
+		font-size:30px;
+	}
+	.banner .img{
+		display:none;
+	}
+}
