@@ -1,6 +1,16 @@
 .Banner{
 	font-family: 'Unbounded', cursive;
 }
+.button{
+  transition: 200ms ease-in-out;
+  border:3px solid #FAF33E;
+  border-radius: 10px;
+}
+.button:hover{
+background-color: white;
+border:3px solid #FAF33E;
+color:#273038;
+}
 
 /* TypeWriter */
 .line-1{
