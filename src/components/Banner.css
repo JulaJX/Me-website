@@ -1,21 +1,31 @@
-.text{
-	color:white;
+.Banner{
 	font-family: 'Unbounded', cursive;
-	font-size:80px;
 }
-@media(max-width:1200px){
-	.text{
-		font-size:40px;
-	}
-	.banner .img{
-		display:none;
-	}
+
+/* TypeWriter */
+.line-1{
+   
+	margin: 60px 0;
+    border-right: 6px solid #FAF33E;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
 }
-@media(max-width:900px){
-	.text{
-		font-size:30px;
-	}
-	.banner .img{
-		display:none;
-	}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:18.5em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #FAF33E;}
+  to{border-right-color: transparent;}
 }

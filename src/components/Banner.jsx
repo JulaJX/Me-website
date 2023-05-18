@@ -1,75 +1,24 @@
 //IMPORT STYLES
+import { useEffect, useState } from 'react';
 import './Banner.css';
 
 const Banner = () => {
-
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-
-
+    
     return ( 
-        <div className="py-[30px] md:py-[0] bg-bg2">
-            <div className="banner flex flex-col md:flex-row text-center  justify-center md:justify-around items-center">
-                <h1 className=' text w-[900px]'>
-                    <a href="" className="typewrite" data-period="2000" data-type='[ "Hi there !", "My name is Julek", "Im Front-end Dev."]'>
-                    <span class="wrap"></span>
-                    </a>
+        <div className="Banner">
+            <div className="flex flex-col xl:flex-row text-center  justify-center md:justify-around items-center">
+                {/* <div className='absolute left-[200px] top-[260px] text-secondary text-[30px] font-bold tracking-wider hidden xl:block'>&lt;<span className='text-primary'> section </span>&gt;</div> */}
+                    <h1 className='mt-[60px] xl:mt-[240px] text-[30px] md:text-[40px] lg:text-[50px] m-w-[370px] md:w-[600px] text-primary text-left'>
+                    <h1 className='text-center'>Hi,  i'm <span className='text-secondary'>Julek</span></h1>
+                    <p class="line-1 anim-typewriter text-[20px] md:text-[30px]  2xl:text-left xl:text-[40px]">I am Front-end/Web Developer </p>
                 </h1>
-                <img src="../src/assets/port.png" alt="portait" className='h-[500px] relative mt-[85px] hidden lg:block' />
+               
+               
+                <div className='relative bg-secondary relative h-[220px] w-[240px] md:h-[370px] md:w-[370px]  top-[50px] xl:top-[110px]  2xl:mt-[0]'>
+                    <img src="../src/assets/port.png" alt="portait" className='h-[250px] md:h-[440px] absolute bottom-[0px] left-[44px]' /> 
+                    <div className='z-[-1] h-[200px] w-[250px] md:h-[350px] md:w-[380px] bg-primary absolute bottom-[-50px] left-[50px]'> </div>
+                </div>
+                {/* <div className='absolute right-[800px] bottom-[340px] text-secondary text-[30px] font-bold tracking-wider hidden xl:block'>&lt;<span className='text-primary'> section </span>/&gt;</div> */}
             </div>
         </div>
      );

@@ -31,14 +31,14 @@ const Navbar = () => {
     } 
 
     return ( 
-        <div className='Navbar bg-bg'>
+        <div className='Navbar '>
             {/* NAV BIG SCREEN */}
                 <nav className='flex justify-center items-center flex-col text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     
                     <div className="flex justift-center items-center flex-row py-[15px]">
-                        <div className='logo-box flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px]'>
-                            <p className='text-secondary'>J</p>
-                            <p className='logo text-secondary'>J</p>
+                        <div className='logo-box bg-secondary py-[2px] px-[px] flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px]'>
+                            <p className='text-primary'>J</p>
+                            <p className='logo text-primary'>J</p>
                         </div>
                         <h1 className='text-primary text-[17px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px]'>Juliusz Jakóbik</h1>
                     </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
 
                  
              {/* NAV STICKY */}
-             <div className="wrap bg-primary z-40">
+             <div className="wrap bg-primary">
                 <div className={ sticky ? 'sticky' : ' ' }>
                     <div className="flex justift-center items-center flex-row py-[15px]">
                         <div className='logo-box flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px]'>

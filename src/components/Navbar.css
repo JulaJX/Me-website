@@ -3,12 +3,13 @@
 }
 /* SLIDE NAV STYLES */
  .nav-slide{
+	z-index: 100;
     text-align: center;
     transition: 400ms ease-in-out;
     font-family: 'Unbounded', cursive;
 	position: absolute;
 	width: 100%;
-	background-color: #2e3840c6;
+	background-color: #f5f4f4;
 }
 /* STICKY NAV STYLES */
 .wrap div {
@@ -24,7 +25,9 @@ transform: translateY(100px);
 
 /* MAIN NAV STYLES */
 .Navbar .logo-box{    
-    font-weight: 700;
+ font-size:27px;
+ font-weight: 700;
+ 
 }
 .Navbar .logo{
     transform: rotateY(180deg);
