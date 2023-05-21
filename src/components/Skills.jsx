@@ -24,16 +24,26 @@ import { RiCodeSSlashFill } from 'react-icons/ri';
 const Skills = () => {
     
     return ( 
-        <div className="Skills mb-[1000px] mt-[270px] xl:mt-[400px] flex flex-col items-left justify-center">
+        <div className="Skills mb-[1000px] mt-[270px] xl:mt-[300px] flex flex-col items-left justify-center py-[100px]">
 
-                        <div className="flex flex-col  w-[100%] md:w-[60%] mx-auto">
+                        <div className="square h-[120px] w-[120px] absolute bg-secondary  xl:block hidden"></div>
+                        <div className="square-m h-[90px] w-[90px] absolute bg-secondary  xl:block hidden"></div>
+                        <div className="square-s h-[50px] w-[50px] absolute bg-secondary  xl:block hidden"></div>
+
+
+
+                        <div className="square2 h-[120px] w-[120px] absolute bg-secondary xl:block hidden"></div>
+                        <div className="square2-m h-[90px] w-[90px] absolute bg-secondary xl:block hidden"></div>
+                        <div className="square2-s h-[50px] w-[50px] absolute bg-secondary  xl:block hidden"></div>
+                        
+                        <div className="flex flex-col mx-auto">
 
                             <div className="flex flex-row items-center justify-center mb-[80px]">
                                 <RiCodeSSlashFill className=' text-[35px] md:text-[46px] text-primary mr-[30px]'/>
                                 <h1 className='text-primary text-center text-[20px] md:text-[30px]'>Technology I use</h1>
                             </div>
                             
-                            <div className=" flex items-center justify-center gap-[70px] flex-wrap w-[70%] mx-auto">
+                            <div className=" flex items-center justify-center gap-[70px] md:gap-[100px] flex-wrap w-[60%] md:w-[50%] mx-auto">
                                 
                                 <Link target="_blank" to="https://en.wikipedia.org/wiki/HTML">
                                     <div className='hover:translate-y-[-8px] ease-in-out duration-200 cursor-pointer'>
