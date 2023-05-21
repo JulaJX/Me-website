@@ -1,3 +1,8 @@
 .Skills{
     font-family: 'Unbounded', cursive;
+
+}
+.shd{
+    /* box-shadow: -10px 10px 20px #FAF33E; */
+    box-shadow: -7px 7px 25px #FAF33E;
 }

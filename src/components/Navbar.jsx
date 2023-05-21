@@ -32,7 +32,7 @@ const Navbar = () => {
     return ( 
         <div className='Navbar '>
             {/* NAV BIG SCREEN */}
-                <nav className='flex justify-center items-center flex-col text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
+                <nav className='flex justify-center items-center  text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     
                     <div className="flex justift-center items-center flex-row py-[15px]">
                         <div className='logo-box bg-secondary py-[2px] px-[3px] flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px]'>
