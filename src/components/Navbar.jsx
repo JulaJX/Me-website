@@ -34,12 +34,12 @@ const Navbar = () => {
             {/* NAV BIG SCREEN */}
                 <nav className='flex justify-center items-center  text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     
-                    <div className="flex justift-center items-center flex-row py-[15px]">
+                    <div className="flex justift-center items-center flex-row py-[15px] cursor-pointer">
                         <div className='logo-box bg-secondary py-[2px] px-[3px] flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px] shadow-md  shadow-shadow'>
                             <p className='text-primary'>J</p>
                             <p className='logo text-primary'>J</p>
                         </div>
-                        <h1 className='text-primary text-[17px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px]'>Juliusz Jakóbik</h1>
+                        <h1 className='text-primary text-[17px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px] hover:text-secondary duration-200'>Juliusz Jakóbik</h1>
                     </div>
 
                     <div className="links text-primary className='flex justify-center items-center  flex-col text-center hidden py-[15px] md:flex md:flex-row">
@@ -74,19 +74,14 @@ const Navbar = () => {
 
                  
              {/* NAV STICKY */}
-             <div className="wrap bg-primary">
+             <div className="wrap ">
                 <div className={ sticky ? 'sticky' : ' ' }>
-                    <div className="flex justift-center items-center flex-row py-[15px]">
-                        <div className='logo-box flex justify-center items-center flex-row text-[20px] sm:text-[25px] md:text-[34px]'>
-                            <p>J</p>
-                            <p className='logo'>J</p>
-                        </div>
-                        <h1 className='text-[17px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px]'>Juliusz Jakóbik</h1>
-                    </div>
+                    
+
                     <ul className='py-4 w-[100%] justify-center items-center  flex-col text-center hidden md:flex md:flex-row '>
-                        <Link to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mb-[-2px] hover:border-secondary text-primary cursor-pointer'>home</li></Link>
-                        <Link to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mb-[-2px] hover:border-secondary text-primary cursor-pointer'>portfolio</li></Link>
-                        <Link to="/contactcv"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mb-[-2px] hover:border-secondary text-primary cursor-pointer'>contact & cv</li></Link>
+                        <Link to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg cursor-pointer'>home</li></Link>
+                        <Link to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg cursor-pointer'>portfolio</li></Link>
+                        <Link to="/contactcv"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg cursor-pointer'>contact & cv</li></Link>
                     </ul>
                 </div> 
             </div>

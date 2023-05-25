@@ -2,7 +2,6 @@
 import './Skills.css';
 //IMPORT REACT COMPONENTS
 import { Link } from 'react-router-dom';
-
 //IMPORT ICONS
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiJavascript,SiReact,SiSass,SiTailwindcss,SiPhp,SiVitess,SiFirebase,SiCss3  } from 'react-icons/si';
@@ -10,27 +9,14 @@ import { TbBrandMysql } from 'react-icons/tb';
 import { BiLeftArrow,BiRightArrow } from 'react-icons/bi';
 import { RiCodeSSlashFill } from 'react-icons/ri';
 
-
-
-
-
-
-
-
-
-
-
-
 const Skills = () => {
     
     return ( 
-        <div className="Skills mb-[1000px] mt-[270px] xl:mt-[300px] flex flex-col items-left justify-center py-[100px]">
+        <div className="Skills mb-[120px] xl:mb-[280px] mt-[270px] xl:mt-[300px] flex flex-col items-left justify-center py-[100px]">
 
                         <div className="square h-[120px] w-[120px] absolute bg-secondary  xl:block hidden"></div>
                         <div className="square-m h-[90px] w-[90px] absolute bg-secondary  xl:block hidden"></div>
                         <div className="square-s h-[50px] w-[50px] absolute bg-secondary  xl:block hidden"></div>
-
-
 
                         <div className="square2 h-[120px] w-[120px] absolute bg-secondary xl:block hidden"></div>
                         <div className="square2-m h-[90px] w-[90px] absolute bg-secondary xl:block hidden"></div>

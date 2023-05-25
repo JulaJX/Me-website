@@ -7,6 +7,7 @@
     box-shadow: -7px 7px 25px #FAF33E;
     
 }
+/* SQUARES */
 .square{
     background: rgb(250,243,62);
     transform: rotate(65deg);
