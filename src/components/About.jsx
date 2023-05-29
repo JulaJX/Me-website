@@ -33,10 +33,10 @@ const About = () => {
                     in the field of information technology in Warsaw. 
                      I'm passionate about learning new skills & aquiring knowledge.<br/>
                     <Link to="/portfolio" className='text-[15px] xl:text-[18px] text-primary'>
-                        <div className="translate-x-[43px] xl:translate-x-[0px] w-[370px] mx-auto xl:mx-[0] translate-y-[20px] flex items-center justif-center ">
+                        <span className="translate-x-[43px] xl:translate-x-[0px] w-[370px] mx-auto xl:mx-[0] translate-y-[20px] flex items-center justif-center ">
                             More information in my CV  
                             <BsFillArrowRightCircleFill className='relative text-[20px] text-primary ml-[20px] hover:text-secondary shadow-xl shadow-shadow'/>
-                        </div>
+                        </span>
                     </Link>
                     </p>
             

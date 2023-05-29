@@ -16,10 +16,10 @@ const Banner = () => {
             <div className="flex flex-col xl:flex-row text-center  justify-center md:justify-around items-center">
 
                 <div className="">
-                    <h1 className='mt-[60px] xl:mt-[170px] text-[30px] md:text-[40px] lg:text-[50px] m-w-[370px] md:w-[600px] text-primary text-left scale-[0.9]'>
+                    <div className='mt-[60px] xl:mt-[170px] text-[30px] md:text-[40px] lg:text-[50px] m-w-[370px] md:w-[600px] text-primary text-left scale-[0.9]'>
                         <h1 className='text-center'>Hi,  i'm <span className='text-secondary'>Julek</span></h1>
                         <p className="line-1 anim-typewriter text-[20px] md:text-[30px]  2xl:text-left xl:text-[37px] ">I am Front-end/Web Developer </p>    
-                    </h1>
+                    </div>
                     <a href="#about"><button className='button mt-[-100px] py-[9px] px-[30px] md:py-[14px] md:px-[45px] bg-secondary text-primary  text-[14px] md:text-[17px] shadow-lg shadow-shadow'>About me</button></a>
                 </div>
                
