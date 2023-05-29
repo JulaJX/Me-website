@@ -9,7 +9,7 @@ const ProjectList = ({projects}) => {
         <>
         {projects.map(project =>(
            
-           <Link to={`portfolio/${project.id}`}>
+           <Link to={`${project.id}`}>
            <div key={project.id} class="max-w-[300px] h-[360px] bg-white rounded-lg shadow-shadow shadow-xl dark:bg-gray-800 hover:bg-secondary hover:translate-y-[-20px] ease-in-out duration-500 cursor-pointer">
                     <a href="#">
                         <img src={maze} alt="The Maze Game Card" className='rounded-t-md' />
