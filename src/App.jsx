@@ -6,8 +6,10 @@ import Banner from '../src/components/Banner'
 import Home from '../src/pages/home/Home'
 import Portfolio from '../src/pages/portfolio/Portfolio'
 import Contactcv from './pages/contactcv/contactcv'
+import Project from './pages/portfolio/Project'
 //STYLES
 import './App.css'
+
 
 
 
@@ -21,6 +23,9 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/contactcv" element={<Contactcv/>}/>
+
+        <Route path="/portfolio/:id" element={<Project/>}/>
+        
       </Routes>
     </div>
   )

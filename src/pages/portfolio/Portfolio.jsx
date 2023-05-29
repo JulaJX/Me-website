@@ -1,3 +1,8 @@
+import { projectFirestore } from '../../firebase/config';
+//IMPORT REACT COMPONENTS
+import { useEffect,useState } from 'react';
+//IMPORT COMPONENTS
+import  ProjectList  from './ProjectList';
 //IMPORT STYLES
 import './Portfolio.css';
 //IMPORT PHOTO
@@ -5,62 +10,54 @@ import  maze  from '../../assets/maze.png';
 
 
 
+
 const Portfolio = () => {
 
+    const [data, setData] = useState(null)
+    const [isPending, setIsPending] = useState(false)
+    const [error, setError] = useState(false)
+
+
+    useEffect(()=>{
+        setIsPending(true)
+
+        projectFirestore.collection('projects').get().then((snapshot) =>{
+            if(snapshot.empty){
+                setError('No projects to load')
+                setIsPending(false)
+            }else{
+                let results = []
+                snapshot.docs.forEach(doc => {
+                    results.push({id:doc.id, ...doc.data()})
+                })
+                setData(results)
+                setIsPending(false)
+            }
+        }).catch(err => {
+            setError(err.message)
+            setIsPending(false)
+        })
+
+    },[])
+
+
     return ( 
-        <div className="Portfolio mt-[120px]">
+        <div className="Portfolio mt-[140px]">
 
-            <h1 className='text-[30px] text-primary  text-center mb-[100px]'>Few of my projects</h1>
-
-            <div className="flex items-center justify-center gap-[100px]">
-
-                <div class="max-w-[300px] bg-white border-[2px] border-primary border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img src={maze} alt="The Maze Game Card" className='rounded-t-md' />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Maze Game</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Escape the maze!</p>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black  bg-blue-700 rounded-lg">
-                                More details
-                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="max-w-[300px] bg-white border-[2px] border-primary border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img src={maze} alt="The Maze Game Card" className='rounded-t-md' />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Maze Game</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Escape the maze!</p>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black  bg-blue-700 rounded-lg">
-                                More details
-                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="max-w-[300px] bg-white border-[2px] border-primary border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img src={maze} alt="The Maze Game Card" className='rounded-t-md' />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Maze Game</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Escape the maze!</p>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black  bg-blue-700 rounded-lg">
-                                More details
-                            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </a>
-                    </div>
+                <div className="flex flex-row w-[70%] xl:w-[60%] items-center justify-center mx-auto xl:items-center xl:justify-center mb-[100px]">
+                    <div className="w-[300px] bg-secondary h-[4px] xl:h-[4px] self-center"></div>
+                    <h1 className='text-center text-primary self-center text-[16px] sm:text-[26px] xl:text-[25px] mx-[60px]'>My Projects </h1>
+                    
+                    <div className="block w-[300px] bg-secondary  h-[4px] xl:h-[4px]  self-center"></div>
+                    
                 </div>
 
+            <div className="flex items-center flex-col justify-center gap-[100px] xl:flex-row">
 
+                {error && <p className='error'>{error}</p>}
+                {isPending && <p className='loading'>Loading...</p>}
+                {data && <ProjectList projects={data} />}
+                
             </div>
                
 
