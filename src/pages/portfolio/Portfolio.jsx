@@ -6,7 +6,6 @@ import  ProjectList  from './ProjectList';
 //IMPORT STYLES
 import './Portfolio.css';
 //IMPORT PHOTO
-import  maze  from '../../assets/maze.png';
 
 
 
@@ -46,7 +45,7 @@ const Portfolio = () => {
 
                 <div className="flex flex-row w-[70%] xl:w-[60%] items-center justify-center mx-auto xl:items-center xl:justify-center mb-[100px]">
                     <div className="w-[300px] bg-secondary h-[4px] xl:h-[4px] self-center"></div>
-                    <h1 className='text-center text-primary self-center text-[16px] sm:text-[26px] xl:text-[25px] mx-[60px]'>Few of my projects</h1>
+                    <h1 className='text-center text-primary self-center text-[16px] sm:text-[26px] xl:text-[25px] mx-[60px]'>Few of my Projects</h1>
                     
                     <div className="block w-[300px] bg-secondary  h-[4px] xl:h-[4px]  self-center"></div>
                     
