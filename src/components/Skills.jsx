@@ -3,8 +3,7 @@ import './Skills.css';
 //IMPORT REACT COMPONENTS
 import { Link } from 'react-router-dom';
 //IMPORT ICONS
-import { AiFillHtml5 } from 'react-icons/ai';
-import { SiJavascript,SiReact,SiSass,SiTailwindcss,SiPhp,SiVitess,SiFirebase,SiCss3  } from 'react-icons/si';
+import { SiHtml5,SiJavascript,SiReact,SiSass,SiTailwindcss,SiPhp,SiVitess,SiFirebase,SiCss3  } from 'react-icons/si';
 import { TbBrandMysql } from 'react-icons/tb';
 import { BiLeftArrow,BiRightArrow } from 'react-icons/bi';
 import { RiCodeSSlashFill } from 'react-icons/ri';
@@ -34,7 +33,7 @@ const Skills = () => {
                                 <Link target="_blank" to="https://en.wikipedia.org/wiki/HTML">
                                     <div className='hover:translate-y-[-8px] ease-in-out duration-200 cursor-pointer'>
                                         <div className="flex flex-col items-center justify-center bg-primary w-[90px] py-[7px]  md:w-[95px] md:py-[12px] relative rounded-xl">
-                                            <AiFillHtml5 className=' text-[35px] md:text-[40px] text-[#E44D26]'/> 
+                                            <SiHtml5 className=' text-[35px] md:text-[40px] text-[#E44D26]'/> 
                                             <h1 className='text-[12px] text-[#E44D26] tracking-wider mt-[5px] font-bold'>HTML5</h1>
                                             <div className='bg-secondary absolute w-[90px] h-[70px] md:w-[95px] md:h-[80px] z-[-1] translate-y-[10px] translate-x-[-10px] rounded-xl shd '></div>
                                         </div>
@@ -75,8 +74,8 @@ const Skills = () => {
                                 <Link target="_blank" to="https://en.wikipedia.org/wiki/JavaScript">
                                 <div className='hover:translate-y-[-8px] ease-in-out duration-200 cursor-pointer'>
                                     <div className="flex flex-col items-center justify-center bg-primary w-[90px] py-[7px]  md:w-[95px] md:py-[13px] relative rounded-xl">
-                                        <SiJavascript className='text-[35px] md:text-[40px] text-[F7DF1E]'/> 
-                                        <h1 className='text-[10px] md:text-[13px] text-[F7DF1E] mt-[5px] font-bold'>JavaScript</h1>
+                                        <SiJavascript className='text-[35px] md:text-[40px] text-[#F7DF1E]'/> 
+                                        <h1 className='text-[10px] md:text-[13px] text-[#F7DF1E] mt-[5px] font-bold'>JavaScript</h1>
                                         <div className='bg-secondary absolute w-[90px] h-[70px] md:w-[95px] md:h-[80px] z-[-1] translate-y-[10px] translate-x-[-10px] rounded-xl shd '></div>
                                     </div>
                                 </div>

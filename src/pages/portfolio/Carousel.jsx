@@ -95,7 +95,7 @@ const Carousel = ({img}) => {
       };
 
     return ( 
-        <div className='Carousel  h-[350px] xl:w-[800px] xl:h-[420px]  relative group'>
+        <div className='Carousel mt-[-40px] w-[340px] h-[170px] sm:w-[370px]  sm:h-[200px] md:w-[420px]  md:h-[250px] xl:w-[620px]  xl:h-[350px]  2xl:w-[800px] 2xl:h-[420px]  relative group'>
            
 
             {img == '1' && ( <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 shadowspec'></div>)}
