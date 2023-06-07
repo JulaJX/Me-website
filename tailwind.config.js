@@ -13,6 +13,7 @@ export default {
     'bg' : '#FFFFFF',
     'bg2' : '#FFFFFF',
     'shadow' : '#c3c3c3',
+    'contact' : '#fdfbfb'
     
     },
     extend: {},

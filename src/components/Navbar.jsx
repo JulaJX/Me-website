@@ -58,7 +58,6 @@ const Navbar = () => {
                     setMenu(menu ? false : true);
                             e.target.parentElement.classList.toggle('text-secondary');
                                           
-                     
                     }}/>
                 </div>
 
