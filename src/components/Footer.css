@@ -1,0 +1,8 @@
+.Footer{
+    font-family: 'Unbounded', cursive;
+    color:#e3e3e3;
+}
+.Footer .logo{
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+}

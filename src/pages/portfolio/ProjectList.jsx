@@ -18,9 +18,9 @@ const ProjectList = ({projects}) => {
            <Link to={`${project.id}`} key={project.id}>
            <div className="max-w-[300px] h-[300px] xl:h-[360px] bg-white rounded-lg shadow-shadow shadow-xl dark:bg-gray-800 hover:bg-secondary hover:translate-y-[-20px] ease-in-out duration-500 cursor-pointer">
                     <div>
-                       {project.img == '1' && (<img className='h-[150px] w-[250px] xl:h-[160px] xl:w-[300px]' src={maze}></img>)}
-                       {project.img == '2' && (<img className='h-[150px] w-[250px] xl:h-[160px] xl:w-[300px]' src={quiz}></img>)}
-                       {project.img == '3' && (<img className='h-[150px] w-[250px] xl:h-[160px] xl:w-[300px]' src={car}></img>)}
+                       {project.img == '1' && (<img className='h-[150px] w-[262px] xl:h-[160px] xl:w-[300px]' src={maze}></img>)}
+                       {project.img == '2' && (<img className='h-[150px] w-[262px] xl:h-[160px] xl:w-[300px]' src={quiz}></img>)}
+                       {project.img == '3' && (<img className='h-[150px] w-[262px] xl:h-[160px] xl:w-[300px]' src={car}></img>)}
                     </div>
                     <div className="p-5">
                         <div>

@@ -41,7 +41,7 @@ const Portfolio = () => {
 
 
     return ( 
-        <div className="Portfolio mt-[140px]">
+        <div className="Portfolio mt-[140px] mb-[280px]">
 
                 <div className="flex flex-row w-[70%] xl:w-[60%] items-center justify-center mx-auto xl:items-center xl:justify-center mb-[100px]">
                     <div className="w-[300px] bg-secondary h-[4px] xl:h-[4px] self-center"></div>
@@ -53,8 +53,8 @@ const Portfolio = () => {
 
             <div className="flex items-center flex-col justify-center gap-[100px] xl:flex-row">
 
-                {error && <p className='error'>{error}</p>}
-                {isPending && <p className='loading'>Loading...</p>}
+                {error && <p className='error mb-[400px]'>{error}</p>}
+                {isPending && <p className='loading mb-[400px]'>Loading...</p>}
                 {data && <ProjectList projects={data} />}
                 
             </div>

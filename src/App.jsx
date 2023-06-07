@@ -9,6 +9,7 @@ import Contactcv from './pages/contactcv/contactcv'
 import Project from './pages/portfolio/Project'
 //STYLES
 import './App.css'
+import Footer from './components/Footer'
 
 
 
@@ -23,10 +24,9 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/contactcv" element={<Contactcv/>}/>
-
         <Route path="/portfolio/:id" element={<Project/>}/>
-        
       </Routes>
+      <Footer/>
     </div>
   )
 }

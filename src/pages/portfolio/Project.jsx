@@ -44,8 +44,8 @@ const Project = () => {
     return ( 
         <div className="Project text-primary mb-[100px] cursor-pointer">
           
-                {error && <p className='error'>{error}</p>}
-                {isPending && <p className='text-[30px] text-center mt-[200px]'>Loading...</p>}
+                {error && <p className='error mb-[700px]'>{error}</p>}
+                {isPending && <p className='text-[30px] text-center mt-[200px] mb-[700px]'>Loading...</p>}
                 {project && (
                     <>
                     

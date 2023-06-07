@@ -12,7 +12,8 @@ export default {
     'fourth' : '#7FC6A4',
     'bg' : '#FFFFFF',
     'bg2' : '#FFFFFF',
-    'shadow' : '#c3c3c3'
+    'shadow' : '#c3c3c3',
+    
     },
     extend: {},
   },
