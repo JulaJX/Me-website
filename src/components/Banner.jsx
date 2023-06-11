@@ -25,7 +25,7 @@ const Banner = () => {
                
                 <div className='relative h-[170px] w-[190px] sm:h-[220px] sm:w-[240px] md:h-[370px] md:w-[370px]  top-[100px] md:top-[160px] xl:top-[110px] bx hover scale-[0.9]'>
                     <img src={portait} alt="portait" className='h-[200px] sm:h-[250px] md:h-[440px] absolute bottom-[0px] left-[44px] bx z-[2] spread3'/> 
-                    <div className='z-[-1] h-[150px] w-[200px] sm:h-[200px] sm:w-[250px] md:h-[370px] md:w-[380px] bg-primary absolute bottom-[-20px] sm:bottom-[-50px] left-[30px] sm:left-[50px] shadow-xl shadow-shadow spread bx flex items-center justify-center'><h1 className='text-left text-[#ffffff] text-[30px] hidden xl:block'>Nice<br/>to<br/>meet<br/>You.</h1> </div>
+                    <div className='z-[-1] h-[150px] w-[200px] sm:h-[200px] sm:w-[250px] md:h-[369px] md:w-[380px] bg-primary absolute bottom-[-20px] sm:bottom-[-50px] left-[30px] sm:left-[50px] shadow-xl shadow-shadow spread bx flex items-center justify-center'><h1 className='text-left text-[#ffffff] text-[30px] hidden xl:block'>Nice<br/>to<br/>meet<br/>You.</h1> </div>
                     <div className='z-[-1] h-[170px] w-[200px] sm:h-[220px] sm:w-[250px] md:h-[370px] md:w-[380px] bg-secondary absolute spread2 z-[1] bx add-shadow'> </div>
                 </div>
                 
