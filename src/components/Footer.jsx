@@ -11,8 +11,6 @@ const Footer = () => {
     return ( 
         <div className="Footer text-center flex items-center justify-between min-h-[190px] bg-primary text-bg 2xl:gap-[160px] leading-9 py-[14px] px-[50px] 2xl:px-[100px] cursor-pointer 2xl:flex-row flex-col">
              
-             
-             
             <div className="flex gap-[20px] sm:gap-[0] justify-center items-center flex-col sm:flex-row py-[15px] cursor-pointer mx-auto order-last 2xl:order-first">
                 <h2 className='text-bg text-center text-[12px]  sm:ml-[20px] sm:text-[13px] sm:ml-[10px] md:text-[15px] md:ml-[16px] tracking-wide'>Designed and Created by</h2>
                 <div className="flex items-center justify-center">

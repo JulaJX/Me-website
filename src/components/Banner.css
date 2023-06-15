@@ -25,7 +25,7 @@ color:#273038;
 
 }
 .hover:hover .spread3{
-  transform: translateX(-220px) translateY(10px);
+  transform: translateX(-200px) translateY(10px);
 }
 .hover:hover .add-shadow{
   box-shadow: 0 20px 25px -5px #c3c3c3

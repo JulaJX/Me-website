@@ -11,11 +11,8 @@ import Project from './pages/portfolio/Project'
 import './App.css'
 import Footer from './components/Footer'
 
-
-
-
 function App() {
-
+  
   return (
     <div className="App">
       <Navbar></Navbar> 

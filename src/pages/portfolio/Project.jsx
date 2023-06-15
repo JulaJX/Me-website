@@ -115,7 +115,7 @@ const Project = () => {
                                         </div>
                                         <ul className='mt-[20px] xl:ml-[100px]  text-left max-w-[340px] xl:w-[450px] flex flex-col items-start justify-start text-[13px] md:text-[14px] 2xl:text-[15px]'>
                                             {project.features.map(feat=>(
-                                                    <li className='my-[6px]'>{feat}.</li>
+                                                    <li key={feat} className='my-[6px]'>{feat}.</li>
                                             ))}
                                         </ul> 
                                     </div>

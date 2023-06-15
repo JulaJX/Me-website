@@ -1,6 +1,5 @@
 .About{
     font-family: 'Unbounded', cursive;
-
 }
 
 .About ul li::before {
@@ -8,6 +7,6 @@
     color: #FAF33E; 
     font-weight: bold; 
     display: inline-block;
-    width: 1.4em; /* Also needed for space (tweak if needed) */
+    width: 1.4em;
     margin-left: -1em; 
   }

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Contactcv = () => {
     return ( 
-        <div className="Contactcv flex bg-contact items-center xl:items-start  flex-col xl:flex-row justify-center gap-[100px] xl:gap-[200px]  2xl:gap-[400px] px-[50px] xl:px-[300px] py-[90px] xl:py-[200px] ">
+        <div className="Contactcv flex items-center xl:items-start  flex-col xl:flex-row justify-center gap-[100px] xl:gap-[200px]  2xl:gap-[400px] px-[50px] xl:px-[300px] py-[90px] xl:py-[200px] ">
             
             <div className="flex items-center xl:items-start justify-start flex-col">
                 <h1 className='text-[21px] sm:text-[22px] md:text-[23px] xl:text-[27px]'>Get in touch</h1>
@@ -34,16 +34,11 @@ const Contactcv = () => {
                 <h2 className='text-[14px] sm:text-[15px] md:text-[16px] xl:text-[17px]'>Here you can take a look at my CV</h2>
                 <br></br>
                 <div className="flex items-center justify-start flex-row gap-[30px] text-[13px]">
-                    <button className='w-[120px] xl:w-[170px] py-[8px] xl:py-[10px] bg-secondary border-secondary border-[3px] rounded-xl hover:bg-bg ease-in-out duration-200'>Download</button>
-                    <button className='w-[120px] xl:w-[170px] py-[8px] xl:py-[10px] bg-secondary border-secondary border-[3px] rounded-xl hover:bg-bg ease-in-out duration-200'>Overview</button>
+                    <button className='w-[120px] xl:w-[170px] py-[8px] xl:py-[10px] bg-secondary border-secondary border-[3px] rounded-xl hover:bg-[#F0EEEE] ease-in-out duration-200'>Download</button>
+                    <button className='w-[120px] xl:w-[170px] py-[8px] xl:py-[10px] bg-secondary border-secondary border-[3px] rounded-xl hover:bg-[#F0EEEE] ease-in-out duration-200'>Overview</button>
                 </div>
             </div>
-                 
-                 
-       
-
-
-
+        
         </div>
      );
 }
