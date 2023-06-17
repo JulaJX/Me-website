@@ -11,7 +11,7 @@ const About = () => {
     return ( 
         <div className="About" id="about">
             
-            <div className="flex flex-col items-center justify-center xl:items-center md:justify-center  h-[500px] mb-[150px] md:mb-[210px] sm:mb-[300px]">
+            <div className="flex flex-col items-center justify-center xl:items-center md:justify-center  h-[500px] pb-[250px] md:pb-[310px] sm:pb-[300px] bg-mbg">
                 
                 <div className="flex flex-row w-[70%] xl:w-[50%] items-center justify-center mx-auto xl:mx-[0px] xl:items-center xl:justify-center">
                     <div className="w-[700px] bg-secondary h-[5px] xl:h-[6px] self-center"></div>

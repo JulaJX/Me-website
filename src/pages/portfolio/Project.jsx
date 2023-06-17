@@ -42,14 +42,14 @@ const Project = () => {
  
 
     return ( 
-        <div className="Project text-primary mb-[100px] cursor-pointer">
+        <div className="Project text-primary pb-[100px] cursor-pointer bg-mbg">
           
                 {error && <p className='error mb-[700px]'>{error}</p>}
-                {isPending && <p className='text-[30px] text-center mt-[200px] mb-[700px]'>Loading...</p>}
+                {isPending && <p className='text-[30px] text-center pt-[200px] pb-[700px]'>Loading...</p>}
                 {project && (
                     <>
                     
-                            <div className="flex flex-row w-[90%] xl:w-[80%] mt-[80px] items-center justify-center mx-auto xl:items-center xl:justify-center">
+                            <div className="flex flex-row w-[90%] xl:w-[80%] pt-[80px] items-center justify-center mx-auto xl:items-center xl:justify-center">
                                 <div className="w-[50%] md:w-[70%] xl:w-[800px] bg-secondary h-[2px] xl:h-[4px] self-center"></div>
                                 <h1 className='text-center text-primary self-center w-[600px] text-[18px] sm:text-[22px] xl:text-[27px] mx-[60px]'>{project.name}</h1>
                                 <div className="w-[50%] md:w-[70%] xl:w-[800px] bg-secondary  h-[2px] xl:h-[4px]  self-center"></div>
@@ -61,7 +61,7 @@ const Project = () => {
                             
                                     {project && <Carousel img={project.img}/>}
 
-                                    <div className="flex items-center justify-start my-[100px] w-[70%] md:w-[85%] mx-auto flex-col md:flex-row">
+                                    <div className="flex items-center justify-start py-[100px] w-[70%] md:w-[85%] mx-auto flex-col md:flex-row">
                                         
                                         <div className="flex items-center justify-center gap-[30px]">
                                            <RiCodeSSlashFill className=' text-[23px] md:text-[25px] text-primary'/>

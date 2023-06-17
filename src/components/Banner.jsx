@@ -12,7 +12,7 @@ const Banner = () => {
     return ( 
         <div className="Banner">
             
-            <div className="flex flex-col xl:flex-row text-center  justify-center md:justify-around items-center">
+            <div className="flex flex-col xl:flex-row text-center  justify-center md:justify-around items-center bg-mbg">
 
                 <div className="flex items-center justify-center flex-col">
                     <div className='mt-[60px] xl:mt-[170px] text-[25px] wrap sm:text-[30px] md:text-[40px] lg:text-[50px] m-w-[370px] md:w-[600px] text-primary text-left scale-[0.9]'>

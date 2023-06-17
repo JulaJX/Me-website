@@ -37,7 +37,7 @@ const Portfolio = () => {
 
 
     return ( 
-        <div className="Portfolio pt-[140px] pb-[280px]">
+        <div className="Portfolio pt-[140px] pb-[280px] bg-mbg">
 
             <div className="flex flex-row w-[70%] xl:w-[60%] items-center justify-center mx-auto xl:items-center xl:justify-center mb-[100px]">
                 <div className="w-[300px] bg-secondary h-[4px] xl:h-[4px] self-center"></div>

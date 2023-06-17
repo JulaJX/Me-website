@@ -11,7 +11,7 @@ import { RiCodeSSlashFill } from 'react-icons/ri';
 const Skills = () => {
     
     return ( 
-        <div className="Skills mb-[120px] xl:mb-[280px] mt-[120px] md:mt-[270px] xl:mt-[300px] flex flex-col items-left justify-center py-[100px]">
+        <div className="Skills pb-[270px] xl:pb-[500px] pt-[220px] md:pt-[340px] xl:pt-[415px] flex flex-col items-left justify-center bg-mbg">
 
                         <div className="square h-[120px] w-[120px] absolute bg-secondary  xl:block hidden"></div>
                         <div className="square-m h-[90px] w-[90px] absolute bg-secondary  xl:block hidden"></div>
