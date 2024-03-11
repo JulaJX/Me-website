@@ -17,7 +17,7 @@ color:#273038;
   transition: ease-in-out 1s all;
 }
 
-@media(min-width:1750px){
+@media(min-width:1420px){
 
 .Banner:hover .spread{
   transform: translateX(20px) translateY(-40px);

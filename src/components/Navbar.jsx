@@ -35,9 +35,9 @@ const Navbar = () => {
                 <nav className='flex justify-center items-center  text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     
                     <div className="flex justift-center items-center flex-row py-[15px] cursor-pointer">
-                        <div className='logo-box bg-secondary py-[2px] px-[3px] flex justify-center items-center flex-row text-[14px] sm:text-[26px] md:text-[34px] shadow-md  shadow-shadow'>
-                            <p className='text-primary'>J</p>
-                            <p className='logo text-primary'>J</p>
+                        <div className='logo-box bg-secondary py-[2px] px-[3px] flex justify-center items-center flex-row  shadow-md  shadow-shadow'>
+                            <p className='text-primary text-[17px] sm:text-[22px] md:text-[27px]'>J</p>
+                            <p className='logo text-primary text-[17px] sm:text-[22px] md:text-[27px]'>J</p>
                         </div>
                         <h1 className='text-primary text-[15px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px] hover:text-secondary duration-200'>Juliusz Jakóbik</h1>
                     </div>
