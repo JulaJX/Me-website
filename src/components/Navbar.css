@@ -47,12 +47,12 @@ flex-direction: row;
     transition: 200ms ease-in-out;
 }
 .Navbar .links a:hover{
-color:#FAF33E;
+color:#1ea3ff;
 }
 .Navbar .links .animation{
     left:45px;
 	position: absolute;
-	border-bottom:2px solid #FAF33E;
+	border-bottom:2px solid #1ea3ff;
 	bottom: 4px;
 	z-index: 0;
 	border-radius: 8px;

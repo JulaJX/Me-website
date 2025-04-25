@@ -30,7 +30,7 @@ const Navbar = () => {
     } 
 
     return ( 
-        <div className='Navbar bg-mbg'>
+        <div className='Navbar'>
             {/* NAV BIG SCREEN */}
                 <nav className='flex justify-center items-center  text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     

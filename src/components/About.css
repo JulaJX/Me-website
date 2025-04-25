@@ -1,10 +1,10 @@
 .About{
     font-family: 'Unbounded', cursive;
+  
 }
 
 .About ul li::before {
     content: "\2022";  
-    color: #FAF33E; 
     font-weight: bold; 
     display: inline-block;
     width: 1.4em;
