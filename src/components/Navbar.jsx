@@ -5,11 +5,14 @@ import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css';
 // REACT ICONS
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import { FaChevronCircleDown } from "react-icons/fa";
+import { use } from 'react';
 
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
+    const [arrow, setArrow] = useState(true);
+    const [movement, setMovement] = useState(true);
     const [menu ,setMenu] = useState(false);
     const activeLink = 'text-primary';
     const normalLink = 'text-black-600';
@@ -17,6 +20,8 @@ const Navbar = () => {
     useEffect(()=>{
         const handleScroll = () =>{
             setSticky(window.scrollY > 100);
+            setArrow(window.scrollY < 150);
+            setMovement(window.scrollY < 50);
         };
         window.addEventListener("scroll",handleScroll);
         return () => window.removeEventListener("scroll", handleScroll)
@@ -76,7 +81,6 @@ const Navbar = () => {
              <div className="wrap ">
                 <div className={ sticky ? 'sticky' : ' ' }>
                     
-
                     <ul className='py-4 w-[100%] justify-center items-center  flex-col text-center hidden md:flex md:flex-row '>
                         <Link to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg text-[14px] cursor-pointer'>home</li></Link>
                         <Link to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg text-[14px] cursor-pointer'>portfolio</li></Link>
@@ -84,8 +88,8 @@ const Navbar = () => {
                     </ul>
                 </div> 
             </div>
-
-          
+            
+            { arrow ? <Link to="#anchor"><FaChevronCircleDown className={movement ? "text-[40px] fixed bottom-[30px] left-[50%] text-primary hover:text-secondary ease-in-out duration-300 translate-y-[0px]" : "text-[30px] fixed bottom-[20px] left-[50%] text-primary hover:text-secondary ease-in-out duration-[600ms] translate-y-[1000px]" }/></Link> : null }
     </div>
     
      );
