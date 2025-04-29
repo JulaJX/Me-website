@@ -75,9 +75,9 @@ const Navbar = () => {
                 <div className={ sticky ? 'sticky' : ' ' }>
                     
                     <ul className='py-4 w-[100%] justify-center items-center  flex-col text-center hidden md:flex md:flex-row '>
-                        <Link to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg text-[14px] cursor-pointer'>home</li></Link>
-                        <Link to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg text-[14px] cursor-pointer'>portfolio</li></Link>
-                        <Link to="/contactcv"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-bg text-[14px] cursor-pointer'>contact & cv</li></Link>
+                        <Link to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>home</li></Link>
+                        <Link to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>portfolio</li></Link>
+                        <Link to="/contactcv"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>contact & cv</li></Link>
                     </ul>
                 </div> 
             </div>
