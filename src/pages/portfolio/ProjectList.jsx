@@ -33,10 +33,10 @@ const ProjectList = ({ projects }) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-5">
+              <div className="p-5 bg-mbg hover:text-secondary ease-in-out duration-300">
                 <h5 className="text-xl font-bold mb-2">{p.name}</h5>
                 <p className="text-base text-gray-600 mb-4">{p.desc2}</p>
-                <span className="inline-flex items-center text-sm">
+                <span className="inline-flex items-center text-sm hover:text-secondary ease-in-out duration-300">
                   Click for more details →
                 </span>
               </div>

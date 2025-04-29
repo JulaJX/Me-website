@@ -1,15 +1,6 @@
 .Banner{
 	font-family: 'Unbounded', cursive;
 }
-.button{
-  transition: 200ms ease-in-out;
-  border:1px solid #90acc4;
-  border-radius: 10px;
-}
-.button:hover{
-border:1px solid #90acc4;
-color:#273038;
-}
 
 /* Portrait movement */
 .bx{

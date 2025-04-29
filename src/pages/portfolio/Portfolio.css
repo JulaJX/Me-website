@@ -1,5 +1,7 @@
 .Portfolio{
     font-family: 'Unbounded', cursive;
+    background: #63c6ff;
+    background: linear-gradient(1deg, rgba(99, 198, 255, 1) 0,9%, rgba(255, 255, 255, 1) 100%, rgba(83, 132, 237, 1) 50%);
 }
 .Project{
         font-family: 'Unbounded', cursive;

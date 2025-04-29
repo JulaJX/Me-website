@@ -1,9 +1,14 @@
+.Project{
+    background: #63c6ff;
+    background: linear-gradient(1deg, rgb(136, 211, 254) 0,0001%, rgba(255, 255, 255, 1) 100%, rgba(83, 132, 237, 1) 50%);
+}
 .Project .shadowspec{
-    box-shadow: 0 20px 60px #FAF33E;
+    box-shadow: 0 8px 50px #1ea3ff;
+    
 }
 .Project ul li::before {
     content: "\2022";
-    color: #FAF33E;
+    color: #1ea3ff;
     font-weight: bold;
     display: inline-block;
     width: 2em;

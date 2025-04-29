@@ -1,3 +1,4 @@
 .Home{
-color:#d2cd25;
+background: #63c6ff;
+background: linear-gradient(1deg, rgba(99, 198, 255, 1) 4%, rgba(255, 255, 255, 1) 100%, rgba(83, 132, 237, 1) 50%);
 }

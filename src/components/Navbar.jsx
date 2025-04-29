@@ -5,14 +5,9 @@ import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css';
 // REACT ICONS
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaChevronCircleDown } from "react-icons/fa";
-import { use } from 'react';
-
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
-    const [arrow, setArrow] = useState(true);
-    const [movement, setMovement] = useState(true);
     const [menu ,setMenu] = useState(false);
     const activeLink = 'text-primary';
     const normalLink = 'text-black-600';
@@ -20,8 +15,6 @@ const Navbar = () => {
     useEffect(()=>{
         const handleScroll = () =>{
             setSticky(window.scrollY > 100);
-            setArrow(window.scrollY < 150);
-            setMovement(window.scrollY < 50);
         };
         window.addEventListener("scroll",handleScroll);
         return () => window.removeEventListener("scroll", handleScroll)
@@ -35,18 +28,18 @@ const Navbar = () => {
     } 
 
     return ( 
-        <div className='Navbar'>
+        <div className='Navbar z-[4]'>
             {/* NAV BIG SCREEN */}
                 <nav className='flex justify-center items-center  text-center z-40  lg:flex-row md:justify-around md:py-[7px] content-center tracking-wider' >
                     
-                    <div className="flex justift-center items-center flex-row py-[15px] cursor-pointer">
-                        <div className='logo-box bg-secondary py-[2px] px-[3px] flex justify-center items-center flex-row  shadow-md  shadow-shadow'>
-                            <p className='text-primary text-[17px] sm:text-[22px] md:text-[27px]'>J</p>
-                            <p className='logo text-primary text-[17px] sm:text-[22px] md:text-[27px]'>J</p>
+                <Link to="/"><div className="flex justift-center items-center flex-row py-[15px] cursor-pointer">
+                        <div className='logo-box bg-secondary py-[7px] px-[7px] flex justify-center items-center flex-row  shadow-md  shadow-shadow rounded-full duration-200 ease-in-out hover:rotate-45 text-primary hover:text-[#fff]'>
+                            <p className='text-[16px] sm:text-[21px] md:text-[24px]'>J</p>
+                            <p className='logo text-[16px] sm:text-[21px] md:text-[24px]'>J</p>
                         </div>
                         <h1 className='text-primary text-[15px]  ml-[20px] sm:text-[16px] sm:ml-[10px] md:text-[19px] md:ml-[20px] hover:text-secondary duration-200'>Juliusz Jakóbik</h1>
                     </div>
-
+                </Link>
                     <div className="links text-primary flex justify-center items-center  flex-col text-center hidden py-[15px] lg:flex md:flex-row">
                         <NavLink to="/" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('45px')}>home</NavLink>
                         <NavLink to="/portfolio" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('240px')} >portfolio</NavLink>
@@ -89,7 +82,7 @@ const Navbar = () => {
                 </div> 
             </div>
             
-            { arrow ? <Link to="#anchor"><FaChevronCircleDown className={movement ? "text-[40px] fixed bottom-[30px] left-[50%] text-primary hover:text-secondary ease-in-out duration-300 translate-y-[0px]" : "text-[30px] fixed bottom-[20px] left-[50%] text-primary hover:text-secondary ease-in-out duration-[600ms] translate-y-[1000px]" }/></Link> : null }
+           
     </div>
     
      );

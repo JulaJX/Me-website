@@ -1,6 +1,4 @@
 .App{
-    background: #63c6ff;
-    background: linear-gradient(1deg, rgba(99, 198, 255, 1) 4%, rgba(255, 255, 255, 1) 100%, rgba(83, 132, 237, 1) 50%);
 }
 .loader-container {
     width: 100%;
@@ -9,8 +7,8 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-
     z-index: 1;
+    background-color: #273038;
 }
 
 .spinner {
