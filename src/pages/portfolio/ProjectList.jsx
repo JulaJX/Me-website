@@ -3,9 +3,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // 1) Statyczne importy wszystkich grafik
-import maze        from '../../assets/maze.png'
-import quiz        from '../../assets/quiz.png'
-import car         from '../../assets/car.png'
+import maze        from '../../assets/maze.webp'
+import quiz        from '../../assets/quiz.webp'
+import car         from '../../assets/car.webp'
 
 // 2) Mapa: nazwa pliku → URL wygenerowany przez bundler
 const imageMap = {

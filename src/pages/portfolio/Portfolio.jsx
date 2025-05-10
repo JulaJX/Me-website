@@ -12,7 +12,6 @@ const Portfolio = () => {
     const [isPending, setIsPending] = useState(false)
     const [error, setError] = useState(false)
 
-
     useEffect(()=>{
         setIsPending(true)
 

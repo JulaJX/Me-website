@@ -3,7 +3,7 @@ import './Banner.css';
 //IMPORT REACT COMPONENTS
 import { useEffect, useState } from 'react';
 //IMPORT PICTURE
-import portait from '../assets/port2.png';
+import portait from '../assets/port2.webp';
 //REACT ICONS
 import { FaChevronCircleDown } from "react-icons/fa";
 

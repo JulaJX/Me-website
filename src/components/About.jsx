@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //IMPORT ICONS
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 //IMPORT PHOTO
-import cv from '../assets/cv2.png'
+import cv from '../assets/cv2.webp'
 
 const About = () => {
     return ( 
