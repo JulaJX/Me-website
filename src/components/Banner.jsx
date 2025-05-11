@@ -25,7 +25,7 @@ const Banner = () => {
 
     return ( 
         <div className="Banner">
-            { arrow ? <a href="#anchor"><FaChevronCircleDown className={movement ? "text-[40px] fixed bottom-[30px] left-[50%] text-primary hover:text-secondary ease-in-out duration-300 translate-y-[0px]" : "text-[30px] fixed bottom-[20px] left-[50%] text-primary hover:text-secondary ease-in-out duration-[400ms] translate-y-[1000px]" }/></a> : null }
+            { arrow ? <a href="#anchor" aria-label="link to skills section"><FaChevronCircleDown className={movement ? "text-[40px] fixed bottom-[30px] left-[50%] text-primary hover:text-secondary ease-in-out duration-300 translate-y-[0px]" : "text-[30px] fixed bottom-[20px] left-[50%] text-primary hover:text-secondary ease-in-out duration-[400ms] translate-y-[1000px]" }/></a> : null }
             
             <div className="flex flex-col xl:flex-row text-center  justify-center md:justify-around items-center">
 

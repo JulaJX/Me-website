@@ -63,9 +63,9 @@ const Navbar = () => {
             {/* NAV SLIDING SMALL SCREEN */}
                 <div>
                     <ul className={menu ? "nav-slide translate-x-[0px] lg:hidden" : "nav-slide translate-x-[-1000px] lg:hidden" } >
-                    <Link aria-label="link to home" to="/"><li className='         text-[12px] sm:text-[14px]  hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'>Home</li></Link>
-                    <Link aria-label="link to portfolio" to="/portfolio"><li className='text-[12px] sm:text-[14px] hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'>Portfolio</li></Link>
-                    <Link aria-label="link to contact" to="/contactcv"><li className='text-[12px] sm:text-[14px] hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'>Contact & CV</li></Link>
+                    <li className='text-[12px] sm:text-[14px]  hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'><Link aria-label="link to home" to="/">Home</Link></li>
+                    <li className='text-[12px] sm:text-[14px] hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'><Link aria-label="link to portfolio" to="/portfolio">Portfolio</Link></li>
+                    <li className='text-[12px] sm:text-[14px] hover:border-l-[5px] hover:border-secondary text-primary hover:mr-[5px] py-[19px] cursor-pointer'><Link aria-label="link to contact" to="/contactcv">Contact & CV</Link></li>
                     </ul>
                 </div>
 
@@ -75,9 +75,9 @@ const Navbar = () => {
                 <div className={ sticky ? 'sticky' : ' ' }>
                     
                     <ul className='py-4 w-[100%] justify-center items-center  flex-col text-center hidden md:flex md:flex-row '>
-                        <Link aria-label="link to home" to="/"><li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>home</li></Link>
-                        <Link aria-label="link to portfolio" to="/portfolio"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>portfolio</li></Link>
-                        <Link aria-label="link to contact" to="/contactcv"><li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'>contact & cv</li></Link>
+                        <li className='         px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'><Link aria-label="link to home" to="/">home</Link></li>
+                        <li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'><Link aria-label="link to portfolio" to="/portfolio">portfolio</Link></li>
+                        <li className='px-[20px] py-[5px] mx-[30px] hover:border-b-[2px] hover:mt-[-2px] hover:border-secondary text-[#fff] text-[14px] cursor-pointer'> <Link aria-label="link to contact" to="/contactcv">contact & cv</Link></li>
                     </ul>
                 </div> 
             </div>
