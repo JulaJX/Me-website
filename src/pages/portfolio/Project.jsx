@@ -119,7 +119,7 @@ const Project = () => {
                                             ))}
                                         </ul> 
                                     </div>
-                                    <Link target="_blank" to={`${project.sourcelink}`}>
+                                    <Link target="_blank" to={`${project.sourcelink}`} aria-label="link to source-code">
                                     <div className="flex items-center justify-center gap-[20px] bg-secondary w-[300px] md:w-[350px] mx-auto py-[10px] rounded-full cursor-pointer border-[2px] border-secondary hover:bg-bg ease-in-out duration-200">
                                         <h1 className='text-[12px] xl:text-[15px]'>Click to see source code</h1>
                                         <SiGithub className='text-[24px] xl:text-[30px]'/>

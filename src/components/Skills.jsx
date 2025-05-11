@@ -32,16 +32,16 @@ const Skills = () => {
                             
                             <div className="flex items-center justify-center gap-[70px] md:gap-[100px] flex-wrap w-[60%] md:w-[50%] mx-auto">
 
-                                <Skill lang="HTML5" color="text-[#E44D26]" img={<SiHtml5 className='text-[28px] sm:text-[35px] md:text-[40px] text-[#E44D26]'/>} link="https://en.wikipedia.org/wiki/HTML"/>
-                                <Skill lang="CSS3" color="text-[#33A9DC]" img={<SiCss3 className='text-[28px] sm:text-[35px] md:text-[40px] text-[#33A9DC]'/>} link="https://en.wikipedia.org/wiki/CSS"/>
-                                <Skill lang="Sass" color="text-[#CD6799]" img={ <SiSass className='text-[28px] sm:text-[35px] md:text-[40px] text-[#CD6799]'/>} link="https://en.wikipedia.org/wiki/Sass_(style_sheet_language)"/>
-                                <Skill lang="Tailwind" color="text-[#38BDF8]" img={<SiTailwindcss className='text-[28px] sm:text-[35px] md:text-[40px] text-[#38BDF8]'/>} link="https://en.wikipedia.org/wiki/Tailwind_CSS"/>
-                                <Skill lang="JavaScript" color="text-[#F7DF1E]" img={<SiJavascript className='text-[28px] sm:text-[35px] md:text-[40px] text-[#F7DF1E]'/>} link="https://en.wikipedia.org/wiki/JavaScript"/>
-                                <Skill lang="TypeScript" color="text-[#3178C6]" img={<SiTypescript className='text-[28px] sm:text-[35px] md:text-[40px] text-[#3178C6]'/>} link="https://pl.wikipedia.org/wiki/TypeScript"/>
-                                <Skill lang="React" color="text-[#61DBFB]" img={<SiReact className='text-[28px] sm:text-[35px] md:text-[40px] text-[#61DBFB]'/>} link="https://en.wikipedia.org/wiki/React_(software)"/>
-                                <Skill lang="PHP" color="text-[#787CB4]" img={<SiPhp className='text-[28px] sm:text-[35px] md:text-[40px] text-[#787CB4]'/>} link="https://en.wikipedia.org/wiki/PHP"/>
-                                <Skill lang="Firebase" color="text-[#F88C12]" img={<SiFirebase className='text-[28px] sm:text-[35px] md:text-[40px] text-[#F88C12]'/>} link="https://en.wikipedia.org/wiki/Firebase"/>
-                                <Skill lang="Vite" color="text-[#B939FE]" img={<SiVitess className='text-[28px] sm:text-[35px] md:text-[40px] text-[#B939FE]'/>} link="https://en.wikipedia.org/wiki/Vite_(software)"/>
+                                <Skill linkdescription="Link to HTML wikipedia page" lang="HTML5" color="text-[#E44D26]" img={<SiHtml5 alt="html image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#E44D26]'/>} link="https://en.wikipedia.org/wiki/HTML"/>
+                                <Skill linkdescription="Link to CSS wikipedia page" lang="CSS3" color="text-[#33A9DC]" img={<SiCss3 alt="css image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#33A9DC]'/>} link="https://en.wikipedia.org/wiki/CSS"/>
+                                <Skill linkdescription="Link to Sass wikipedia page" lang="Sass" color="text-[#CD6799]" img={ <SiSass alt="sass image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#CD6799]'/>} link="https://en.wikipedia.org/wiki/Sass_(style_sheet_language)"/>
+                                <Skill linkdescription="Link to Tailwind wikipedia page" lang="Tailwind" color="text-[#38BDF8]" img={<SiTailwindcss alt="tailwind image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#38BDF8]'/>} link="https://en.wikipedia.org/wiki/Tailwind_CSS"/>
+                                <Skill linkdescription="Link to Javascript wikipedia page" lang="JavaScript" color="text-[#F7DF1E]" img={<SiJavascript alt="javascript image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#F7DF1E]'/>} link="https://en.wikipedia.org/wiki/JavaScript"/>
+                                <Skill linkdescription="Link to TypeScript wikipedia page" lang="TypeScript" color="text-[#3178C6]" img={<SiTypescript alt="typescript image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#3178C6]'/>} link="https://pl.wikipedia.org/wiki/TypeScript"/>
+                                <Skill linkdescription="Link to React wikipedia page" lang="React" color="text-[#61DBFB]" img={<SiReact alt="react image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#61DBFB]'/>} link="https://en.wikipedia.org/wiki/React_(software)"/>
+                                <Skill linkdescription="Link to PHP wikipedia page" lang="PHP" color="text-[#787CB4]" img={<SiPhp alt="php image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#787CB4]'/>} link="https://en.wikipedia.org/wiki/PHP"/>
+                                <Skill linkdescription="Link to Firebase wikipedia page" lang="Firebase" color="text-[#F88C12]" img={<SiFirebase alt="firebase image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#F88C12]'/>} link="https://en.wikipedia.org/wiki/Firebase"/>
+                                <Skill linkdescription="Link to Vite wikipedia page" lang="Vite" color="text-[#B939FE]" img={<SiVitess alt="vite image" className='text-[28px] sm:text-[35px] md:text-[40px] text-[#B939FE]'/>} link="https://en.wikipedia.org/wiki/Vite_(software)"/>
                         
                             </div>
 

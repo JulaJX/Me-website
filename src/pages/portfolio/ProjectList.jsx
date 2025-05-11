@@ -22,7 +22,7 @@ const ProjectList = ({ projects }) => {
         const src = imageMap[fileName]
 
         return (
-          <Link to={p.id} key={p.id}>
+          <Link to={p.id} key={p.id} aria-label={`link to ${p.name}`}>
             <article className="max-w-[300px] bg-white rounded-lg shadow-lg hover:-translate-y-3 transition-transform duration-200 cursor-pointer">
               <div className="h-[160px] overflow-hidden rounded-t-lg">
                 <img

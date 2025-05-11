@@ -25,18 +25,18 @@ const Footer = () => {
                 <div className="flex flex-col gap-[30px] sm:gap-[100px] 2xl:gap-[200px] sm:flex-row py-[20px] 2xl:py-[0px] items-center justify-center">
                     
                     <div className="flex items-center sm:items-start justify-center flex-col text-[12px] mx-auto sm:border-l-[3px] sm:border-secondary sm:pl-[10px]">
-                    <Link to="/" className='hover:text-shadow'>Home</Link> 
-                    <Link to="/portfolio" className='hover:text-shadow'>Portfolio</Link> 
-                    <Link to="/contactcv" className='hover:text-shadow'>Contact & CV</Link> 
+                    <Link aria-label="link to home" to="/" className='hover:text-shadow'>Home</Link> 
+                    <Link aria-label="link to portfolio" to="/portfolio" className='hover:text-shadow'>Portfolio</Link> 
+                    <Link aria-label="link to contact cv" to="/contactcv" className='hover:text-shadow'>Contact & CV</Link> 
                     </div> 
 
                     <div className="flex items-start justify-center flex-col ">
                         <div className="flex text-center items-center justify-center flex-col sm:flex-row gap-[20px] text-[12px] sm:text-[13px] md:text-[15px] 2xl:text-[16px]">
                             Created with
                             <div className="flex wrap gap-[30px]">
-                                <Link target="_blank" to="https://en.wikipedia.org/wiki/React_(software)"><SiReact className='text-[25px] sm:text-[30px] text-[#61DBFB] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
-                                <Link target="_blank" to="https://en.wikipedia.org/wiki/Firebase"><SiFirebase className='text-[25px] sm:text-[30px] text-[#F88C12] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
-                                <Link target="_blank" to="https://en.wikipedia.org/wiki/Tailwind_CSS"><SiTailwindcss className='text-[25px] sm:text-[30px] text-[#38BDF8] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
+                                <Link aria-label="link to react wiki page" target="_blank" to="https://en.wikipedia.org/wiki/React_(software)"><SiReact className='text-[25px] sm:text-[30px] text-[#61DBFB] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
+                                <Link aria-label="link to firebase wiki page" target="_blank" to="https://en.wikipedia.org/wiki/Firebase"><SiFirebase className='text-[25px] sm:text-[30px] text-[#F88C12] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
+                                <Link  aria-label="link to tailwind wiki page" target="_blank" to="https://en.wikipedia.org/wiki/Tailwind_CSS"><SiTailwindcss className='text-[25px] sm:text-[30px] text-[#38BDF8] hover:translate-y-[-4px] ease-in-out duration-200'/></Link>
                             </div>
                         </div>
 

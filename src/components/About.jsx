@@ -25,7 +25,7 @@ const About = () => {
                     Hi there, I'm young and ambitious Web Developer based in Poland.
                      Currently I'm studying on Polish-Japanese Academy of information technology in Warsaw.  
                      I'm passionate about learning new skills & aquiring knowledge.<br/>
-                    <Link to="/contactcv" className='text-[13px] sm:text-[14px] md:text-[15px] xl:text-[18px] text-primary'>
+                    <Link to="/contactcv" className='text-[13px] sm:text-[14px] md:text-[15px] xl:text-[18px] text-primary' aria-label="link to cv area">
                         <span className="max-w-[370px] mx-auto xl:mx-[0] translate-y-[20px] flex items-center justify-center ">
                             More information in my CV  
                             <BsFillArrowRightCircleFill className='relative text-[20px] text-primary ml-[20px] hover:text-secondary shadow-xl shadow-shadow'/>
