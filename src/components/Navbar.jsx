@@ -42,7 +42,7 @@ const Navbar = () => {
                 </Link>
                     <div className="links text-primary flex justify-center items-center  flex-col text-center hidden py-[15px] lg:flex md:flex-row">
                         <NavLink aria-label="link to home" to="/" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('45px')}>home</NavLink>
-                        <NavLink aria-label="link to portfolio" to="/portfolio" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('240px')} >portfolio</NavLink>
+                        <NavLink aria-label="link to portfolio" to="/portfolio" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('240px')} >projects</NavLink>
                         <NavLink aria-label="link to contact cv" to="/contactcv" className={({ isActive }) => isActive ? activeLink : normalLink} onClick={(e) => LinkSlider('435px')}>contact & cv</NavLink>
                         <div className="animation start-home"></div>
                     </div>

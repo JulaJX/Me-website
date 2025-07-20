@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Contactcv = () => {
     return ( 
-        <div className="Contactcv flex items-center xl:items-start  flex-col xl:flex-row justify-center gap-[100px] xl:gap-[200px]  2xl:gap-[400px] px-[50px] xl:px-[300px] py-[90px] xl:py-[200px]">
+        <div className="Contactcv flex items-center xl:items-start  flex-col xl:flex-row justify-center gap-[100px] xl:gap-[200px]  2xl:gap-[400px] px-[50px] xl:px-[300px] py-[90px] xl:py-[200px] xl:pb-[529px]">
             
             <div className="flex items-center xl:items-start justify-start flex-col">
                 <h1 className='text-[21px] sm:text-[22px] md:text-[23px] xl:text-[27px]'>Get in touch</h1>

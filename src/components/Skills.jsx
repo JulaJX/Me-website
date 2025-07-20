@@ -27,7 +27,7 @@ const Skills = () => {
 
                             <div className="flex flex-row items-center justify-center mb-[80px]">
                                 <RiCodeSSlashFill className=' text-[25px] sm:text-[35px] md:text-[46px] text-primary mr-[30px]'/>
-                                <h1 className='text-primary text-center text-[15px] sm:text-[20px] md:text-[30px] z-[3]'>Tech Stack</h1>
+                                <h1 className='text-primary text-center text-[15px] sm:text-[20px] md:text-[30px] z-[3]'>Tech I’m experienced with</h1>
                             </div>
                             
                             <div className="flex items-center justify-center gap-[70px] md:gap-[100px] flex-wrap w-[60%] md:w-[50%] mx-auto">

@@ -32,7 +32,7 @@ const Banner = () => {
                 <div className="flex items-center justify-center flex-col">
                     <div className='mt-[60px] xl:mt-[170px] text-[25px] wrap sm:text-[30px] md:text-[40px] lg:text-[50px] m-w-[370px] md:w-[600px] text-primary text-left scale-[0.9]'>
                         <h1 className='text-center'>Hi,  i'm <span className='text-secondary'>Julek</span></h1>
-                        <p className="line-1 anim-typewriter text-[16px] sm:text-[20px] md:text-[30px]  2xl:text-left xl:text-[37px] ">I am Front-end/Web Developer </p>    
+                        <p className="line-1 anim-typewriter text-[16px] sm:text-[20px] md:text-[30px]  2xl:text-left xl:text-[37px] ">I am a passionate IT specialist</p>    
                     </div>
                     <a href="#about"><button className='mt-[-100px] py-[9px] px-[30px] md:py-[14px] md:px-[45px] bg-secondary text-[#fff]  text-[14px] md:text-[17px] shadow-lg shadow-shadow hover:bg-[#dcedfa] hover:text-primary duration-200 border-[1px] border-secondary hover:border-primary ease-in'>About me</button></a>
                 </div>
