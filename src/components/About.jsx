@@ -11,7 +11,7 @@ const About = () => {
     return ( 
         <div className="About" id="about">
             
-            <div className="bg-[#fff] flex lg:pt-[290px]  pt-[315px] flex-col items-center justify-center xl:items-center md:justify-center h-[600px] sm:h-[500px] pb-[350px] md:pb-[410px]  sm:pb-[300px] z-[10]">
+            <div className="bg-[#fff] flex lg:pt-[290px]  pt-[375px] flex-col items-center justify-center xl:items-center md:justify-center h-[600px] sm:h-[500px] pb-[350px] md:pb-[410px]  sm:pb-[300px] z-[10]">
                 
                 <div className="flex flex-row w-[70%] xl:w-[50%] items-center justify-center mx-auto xl:mx-[0px] xl:items-center xl:justify-center">
                     <div className="w-[700px] bg-secondary h-[5px] xl:h-[6px] self-center"></div>
@@ -21,10 +21,12 @@ const About = () => {
                 
                 <div className="flex flex-col xl:flex-row item-center justify-center text-primary w-[80%] xl:w-[60%]  mt-[40px] xl:mt-[70px] tracking-wider leading-10">
                     <img src={cv} alt="about photo" className='h-[150px] xl:h-[230px] xl:pt-[10px] rounded-full bg-secondary mx-[100px] self-center shadow-xl shadow-shadow' />
-                    <p className='text-center text-[12px] sm:text-[13px] md:text-[15px] xl:text-[19px] mt-[50px] xl:mt-[0px] xl:text-left mx-auto self-center max-w-[600px]'>
-                    Hi there, I'm young and ambitious Web Developer based in Poland.
-                     Currently I'm studying on Polish-Japanese Academy of information technology in Warsaw.  
-                     I'm passionate about learning new skills & aquiring knowledge.<br/>
+                    <p className='text-center text-[11px] sm:text-[13px] md:text-[15px] xl:text-[19px] mt-[30px] xl:mt-[0px] xl:text-left mx-auto self-center max-w-[600px]'>
+                Hi there! Young and ambitious IT Specialist from Poland.
+Third-year CS student at PJATK in Warsaw.
+I handle data engineering daily – extracting insights from big datasets with T-SQL, Power BI, and advanced Excel.
+Work in English-speaking, multi-cultural teams.
+With a web dev background, I blend analysis and skills for real business impact.<br/>
                     <Link to="/contactcv" className='text-[13px] sm:text-[14px] md:text-[15px] xl:text-[18px] text-primary' aria-label="link to cv area">
                         <span className="max-w-[370px] mx-auto xl:mx-[0] translate-y-[20px] flex items-center justify-center ">
                             More information in my CV  
